@@ -16,32 +16,95 @@ line y loc=14  spac=0.01
 # substrate is silicon (100) 
 init silicon orientation =100 c.phos=1e15
 
+##########################################################################################################################
+
 #Diffusion in furnace 
-diff time=1.75 hours temp=1125 c.boron=2e20
+diff time=.5 hours temp=1125 c.boron=2e22
+
+#extract depth
+extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_05_2e20.dat"
+
+# save the structure for later plotting
+structure outfile=bragg01.str
+
+##########################################################################################################################
+
+#Diffusion in furnace 
+diff time=.75 hours temp=1125 c.boron=2e22
+
+#extract depth
+extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_075_2e20.dat"
+
+# save the structure for later plotting
+structure outfile=bragg02.str
+
+##########################################################################################################################
+
+#Diffusion in furnace 
+diff time=1.0 hours temp=1125 c.boron=2e22
+
+#extract depth
+extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_10_2e20.dat"
+
+# save the structure for later plotting
+structure outfile=bragg03.str
+
+##########################################################################################################################
+
+#Diffusion in furnace 
+diff time=1.25 hours temp=1125 c.boron=2e22
+
+#extract depth
+extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_125_2e20.dat"
+
+# save the structure for later plotting
+structure outfile=bragg04.str
+
+##########################################################################################################################
+
+#Diffusion in furnace 
+diff time=1.5 hours temp=1125 c.boron=2e22
+
+#extract depth
+extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_15_2e20.dat"
+
+# save the structure for later plotting
+structure outfile=bragg05.str
+
+##########################################################################################################################
+
+#Diffusion in furnace 
+diff time=1.75 hours temp=1125 c.boron=2e22
 
 #extract depth
 extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_175_2e20.dat"
 
 # save the structure for later plotting
-structure outfile=bragg01.str
+structure outfile=bragg06.str
+
+##########################################################################################################################
 
 #Diffusion in furnace 
-diff time=2.00 hours temp=1125 c.boron=2e20
+diff time=2.0 hours temp=1125 c.boron=2e22
 
 #extract depth
 extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_20_2e20.dat"
 
 # save the structure for later plotting
-structure outfile=bragg02.str
+structure outfile=bragg07.str
+
+##########################################################################################################################
 
 #Diffusion in furnace 
-diff time=2.25 hours temp=1125 c.boron=2e20
+diff time=2.25 hours temp=1125 c.boron=2e22
 
 #extract depth
 extract name="depth" curve(depth, impurity="Boron" material="Silicon" mat.occno=1 x.val=-1) outfile="extract_225_2e20.dat"
 
 # save the structure for later plotting
-structure outfile=bragg03.str
+structure outfile=bragg08.str
+
+##########################################################################################################################
 
 
 # Plot the structures
